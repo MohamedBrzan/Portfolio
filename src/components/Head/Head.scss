@@ -1,0 +1,43 @@
+@use '../../scss/classNames.scss' as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    &:hover {
+      @extend .linkHover;
+    }
+    font: {
+      weight: bold;
+      size: 1.3rem;
+    }
+  }
+  .langs {
+    span {
+      font: {
+        weight: 500;
+        size: 10px;
+      }
+      letter-spacing: 1px;
+      padding: 0.2rem;
+      cursor: pointer;
+      &:hover {
+        @extend .linkHover;
+      }
+      &.lang {
+        &.active {
+          font-weight: 900;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

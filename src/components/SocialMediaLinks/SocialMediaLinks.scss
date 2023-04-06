@@ -1,0 +1,9 @@
+.social_links {
+  position: fixed;
+  top: 45%;
+  right: 1rem;
+  > div {
+    cursor: pointer;
+    padding: 0.1rem 0;
+  }
+}
