@@ -1,4 +1,19 @@
+@use './scss/colors' as *;
+
 .app_container {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.title {
+  padding: 5rem;
+  font-weight: 900;
+  h2 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    // letter-spacing: 1rem;
+    color: $mainColor;
+    font-family: 'Gilroy', sans-serif;
+  }
 }

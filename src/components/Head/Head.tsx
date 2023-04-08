@@ -1,4 +1,9 @@
-const HeadNav = () => <div className='logo'>Spotless.</div>;
+const HeadNav = () => (
+  <div className='logo'>
+    <Link to='/'>MohamedB.</Link>
+  </div>
+);
+import { Link } from 'react-router-dom';
 import './Head.scss';
 
 const HeadLangs = () => (

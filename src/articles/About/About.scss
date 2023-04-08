@@ -1,0 +1,12 @@
+@use '../../scss/colors' as *;
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: $thirdColor;
+  .bio {
+    padding: 0rem 5rem 5rem;
+    font-size: 2rem;
+  }
+}
