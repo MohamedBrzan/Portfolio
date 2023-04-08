@@ -10,6 +10,8 @@ import MUI from '../../assets/techsIcons/mui.svg';
 import Redux from '../../assets/techsIcons/redux.svg';
 import Vitejs from '../../assets/techsIcons/vitejs.svg';
 
+import Container from 'react-bootstrap/Container';
+
 import './Techs.scss';
 
 const Techs = () => {
@@ -35,16 +37,19 @@ const Techs = () => {
         </h2>
       </div>
 
-      <Row className='techs_svg'>
-        {Data.map(({ title, url }, index) => (
-          <Col sm={12} md={6} lg={4} xl={3}>
-            {' '}
-            <figure key={index}>
-              <img src={url} alt={title} title={title} />
-            </figure>
-          </Col>
-        ))}
-      </Row>
+      <Container>
+        {' '}
+        <Row className='techs_svg'>
+          {Data.map(({ title, url }, index) => (
+            <Col xs={6} lg={4} xl={3}>
+              {' '}
+              <figure key={index}>
+                <img src={url} alt={title} title={title} />
+              </figure>
+            </Col>
+          ))}
+        </Row>{' '}
+      </Container>
     </div>
   );
 };

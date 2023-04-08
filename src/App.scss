@@ -1,4 +1,5 @@
 @use './scss/colors' as *;
+@use './scss/mixins' as *;
 
 .app_container {
   margin: 0;
@@ -9,11 +10,23 @@
 .title {
   padding: 5rem;
   font-weight: 900;
+
   h2 {
     font-size: 10rem;
     text-transform: uppercase;
-    // letter-spacing: 1rem;
+    letter-spacing: 1rem;
     color: $mainColor;
     font-family: 'Gilroy', sans-serif;
+
+    @include MediaQuery('sm') {
+      font: {
+        size: 4rem;
+      }
+    }
+    @include MediaQuery('md') {
+      font: {
+        size: 4rem;
+      }
+    }
   }
 }

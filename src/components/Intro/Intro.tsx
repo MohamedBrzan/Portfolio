@@ -2,7 +2,6 @@ import HomeAnime from '../../animations/Home/HomeAnime';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import './Intro.scss';
-import AppRoutes from '../../routes/AppRoutes';
 import Container from 'react-bootstrap/Container';
 import About from '../../articles/About/About';
 import Techs from '../../articles/Techs/Techs';

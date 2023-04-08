@@ -1,4 +1,5 @@
 @use '../../scss/colors' as *;
+@use '../../scss/mixins' as *;
 
 .techs {
   background: $secondColor;
@@ -9,10 +10,19 @@
     align-items: center;
     margin: 0 auto;
     gap: 5rem;
+    @include MediaQuery('sm') {
+      gap: 0;
+    }
+    @include MediaQuery('md') {
+      gap: 0;
+    }
+    @include MediaQuery('lg') {
+      gap: 0;
+    }
     figure {
       padding: 1rem;
       img {
-        width: 10rem;
+        max-width: 10rem;
       }
     }
   }

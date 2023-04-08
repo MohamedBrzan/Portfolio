@@ -2,8 +2,10 @@
   position: fixed;
   top: 45%;
   right: 1rem;
-  > div {
-    cursor: pointer;
+  .link {
+    a {
+      color: black;
+    }
     padding: 0.1rem 0;
   }
 }
